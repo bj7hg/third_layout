@@ -1,0 +1,713 @@
+@font-face {
+    font-family: 'open_sans_condensedlight';
+    src: url('fonts/opensans/opensanscondensed-light-webfont.woff2') format('woff2'),
+         url('fonts/opensans/opensanscondensed-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+#footer{
+    margin: 200px auto 0 auto; 
+    background-color: #767676;
+    height: 200px;
+    width: 100%;
+}
+
+body{
+    padding:0;
+    margin: 0;
+}
+
+#header{
+    height: 230px;
+    width: 100%;
+    display:flex;
+    background-color: #dcdcdc;
+}
+
+#contentHeader{
+    margin: 0 auto 0 auto;
+    width: 980px;
+    height: 230px;
+    padding: 0 10px;
+    display:flex;
+    align-items: center;
+}
+
+#alignRight{
+    margin: 0 auto 0 auto;
+    width: 980px;
+    height: 230px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#logo{
+    width: 273px;
+    height: 100px;
+    display:flex;
+    justify-content: left;
+}
+.contactsHeader{
+    width:256px;
+    color: #767676;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 46px;
+    font-family:"open_sans_condensedlight";
+    text-align: left;
+    padding:0;
+}
+
+#numbers{
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    padding:0;
+    width: 256px;
+    height: 108px;
+
+}
+
+.feedback{
+    display: flex;
+    margin-left:70px;
+}
+#menu{
+    background-color: #777777;
+    height: 80px;
+    width: 100%;
+}
+
+#contentMenu{
+    height: 80px;
+    width: 980px;
+    padding: 0 10px;
+    margin: 0 auto 0 auto;
+    display:flex;
+    text-align: center; 
+    align-items: center;
+}
+
+.decoration{
+    color:white;
+    text-decoration: none;
+}
+
+#menuList{
+    justify-content: center;
+    width: 980px;
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 400;
+    font-style: normal;
+    list-style: none; 
+    line-height: normal;
+    letter-spacing: 0.35px;
+    position: relative; 
+    display: flex;
+    flex-flow: row wrap;
+    padding:0;
+    margin: 0;
+}
+
+.menuList:after{
+    position: absolute; 
+    top: 0; bottom: 0; left: -1px; 
+    width: 3px; 
+    background-color: inherit; 
+}
+
+.liStyle{
+    margin: 0 0; padding: 0 20px; 
+    white-space: nowrap; 
+    color: #fff; 
+}
+
+.liStyle:not(:first-child){
+    margin-left: -1px;
+    border-left: 1px solid #fff; 
+}
+
+#contentMenu a:hover{
+    border-bottom:2px solid #ffffff;
+}
+
+.popup_link{
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.6px;
+    line-height: normal;
+    border-bottom: 2px dashed #777777;
+    animation: 3s;
+}
+.sliderBig{
+    width: 100%; 
+    height:400px; 
+    display:flex;
+    background-color: #f8f8f8;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    min-width: 0;
+    display: flex;
+}
+.slick-track{
+    display: flex;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-arrow{
+    top:50%;
+    z-index: 1000;
+    font-size: 0;
+    width: 36px;
+    height: 55px;
+    margin:0 auto;
+    position: absolute;
+    border:0;
+}
+
+.slick-arrow.slick-prev{
+    left: 0;
+    background: url('back_button.png') 0 0 / 100% no-repeat;
+}
+
+.slick-arrow.slick-next{
+    background: url('next_button.png') 0 0 / 100% no-repeat;
+    right: 0;
+}
+
+.slider_item{
+    min-width: 0;
+    width: 1248px;
+    height: 462px;
+    display: flex;
+    justify-content: center;
+}
+
+.breadcrumbs_decoration{
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    line-height: 18px;
+    text-align: left;
+}
+
+.bread_left{
+    margin-right: 10px;
+}
+.bread_center{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.bread_right{
+    margin-left: 10px;
+}
+.content{
+    width:980px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.breadcrumbs{
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    background-color: white;;
+    position: relative;
+    padding: 0 10px;
+}
+
+.centerButtons{
+    width: 980px;
+    height: 0;
+    margin: 0 auto;
+    
+}
+.buttons_container{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    bottom:230px;
+}
+
+.burger_list{
+    padding-left:15px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    line-height: 22px;
+    list-style-type: disc;
+    color:#767676;
+    display: none;
+}
+
+.burger_list a:hover{
+    color:black;
+}
+.menu_content{
+    width: 178px;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.45px;
+    line-height: 30px;
+    text-align: left;
+    display: flex;
+    margin-bottom:112px
+}
+
+.navigationMenu{
+    padding: 0;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.navigationMenu a{
+    color: #767676;
+    text-decoration: none;
+}
+
+.navigationMenu a.menuMain{
+    text-decoration: underline;
+}
+
+.menu_content li:hover ul{
+    display:block;
+}
+
+.leftBlock{
+    width: 178px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricelist{
+    color: #444444;
+    font-family: "PT Sans";
+    font-size: 30px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+}
+
+.excel{
+    width: 97px;
+    height: 111px;
+}
+
+.excelBlock{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.burger_list li:hover{
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.rightBlock{
+    display: flex;
+    width: 781px;
+    height: 1134px;
+    margin-left: 200px;
+    flex-direction: column;
+}
+
+.without_bread{
+    display: flex;
+    width: 980px;
+    height:1144px;
+    padding: 0 10px;
+    height: 1144px;
+}
+
+.tovar{
+    width: 780px;
+    height: 780px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.tovardiv{
+    height: 380px;
+    width: 250px;
+    background-color: #dcdcdc;
+    display: flex;
+    flex-direction: column;
+}
+
+.nophoto{
+    margin: 20px 20px;
+}
+
+.cooltovar{
+    width: 188px;
+    height: 35px;
+    margin-left:20px ;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.45px;
+    line-height: 18px;
+}
+
+.price{
+    height: 26px;
+    width: 210px;
+    margin-left: 20px;
+    margin-bottom:15px;
+    margin-top: 59px;
+    display: flex ;
+}
+
+.koshyk{
+    width: 28px;
+    height: 21px;
+    margin-left: 55px ;
+}
+
+.price_text{
+    width: 108px;
+    color: #444444;
+    font-family: "PT Sans";
+    font-size: 28px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.7px;
+    line-height: 18px;
+    text-align: left;
+}
+
+
+.tovar a{
+    text-decoration: none;
+    color: #767676;
+}
+
+.tovardiv{
+    height: 380px;
+}
+
+.pager{
+    display: flex;
+    height: 13px;
+    padding: 0;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.pages_list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 7.91px;
+    line-height: 22px;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+.norLi{
+    text-decoration: none;
+    color: #767676;
+}
+
+.thirdLi{
+    color: #444444;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+hr{
+    margin: 67px auto 0 auto;
+    width:780px;
+    color:#777777;
+}
+
+.twoDivs{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    word-break: break-all;
+    color: #767676;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.35px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.firstDiv{
+    width: 371px;
+}
+
+.secondDiv{
+    width: 368px;
+}
+
+.copyright{
+    width: 210px;
+    margin-top:50px;
+}
+
+.footerContent{
+    width:980px;
+    padding:0 10px;
+    display:flex;
+    margin: 0 auto 0 auto;
+}
+
+.copyrightText{
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.30px;
+    font-weight: 400;
+    margin-left:10px;
+}
+
+.footerUl{
+    padding:0;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+.footerList{
+    width: 119px;
+    height: 117px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    text-decoration: underline;
+    margin-left: 350px;
+    padding:0;
+    margin-top: 50px;
+    position: absolute;
+}
+.contentFooterRight{
+    position:absolute;
+    width:350px;
+    display: flex;
+    margin-top: 0;
+}
+
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.footerCompany{
+    width: 36px;
+    height: 38px;
+}
+.footerLogo{
+    display:flex;
+    flex-direction: row;
+    margin-top: 50px;
+    margin-left:765px;
+}
+.footerLogoText{
+    width: 170px;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 9px;
+}
+
+.form{
+    width: 466px;
+    height: 578px;
+}
+
+.input_name{
+    width: 339px;
+    height: 40px;
+}
+
+.input_number{
+    width: 339px;
+    height: 40px;
+    
+}
+
+.input_mail{
+    width: 339px;
+    height: 40px;
+}
+
+.textarea{
+    width: 339px;
+    height: 140px;
+}
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 3000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.knopka{
+    background-color: #777777;
+    width: 128px;
+    height: 42px;
+    border:0;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.ur{
+    color: #535353;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    margin-top: 20px;
+
+}
+
+.popup_title{
+    color: #535353;
+    font-family: "PT Sans";
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top:35px;
+}
+
+.form{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    padding:0;
+}
+
+.popup_body{
+    width: 466px;
+    height: 578px;
+    background-color: #ffffff;
+    margin-top: 27px;
+    margin-left: 27px;
+}
+
+.popup:target{
+    opacity: 1;
+    transition:opacity 500ms;
+    visibility: visible;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.close{
+    width: 27px;
+    height: 27px;
+    background-color: #777777;
+    position: absolute;
+    margin-left: 493px;
+    display: flex;
+}
+
+.forClose{
+    height: 632px;
+    width: 520px;
+}
+
+textarea{
+    resize: none;
+}
+
+.firstLine{
+    font-size: 21px;
+    margin-left: 11px;
+    padding: 0;
+    transform: rotate(45deg);
+}
+
+.secondLine{
+    font-size: 21px;
+    padding: 0;
+    transform: rotate(-45deg);
+    margin-left: -4px;
+}
+
+::placeholder{
+    color: #dc7f7f;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-style: italic;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: left;
+}
+
+input{
+    box-shadow: inset 0 0 13px rgba(228, 106, 106, 0.75);
+    border: 1px solid #ff8383;
+}
+
+input:focus{
+    box-shadow: 0 0 0 rgb(255,255,255);
+}
+
