@@ -1,0 +1,1 @@
+Розроблено під Google Chrome
